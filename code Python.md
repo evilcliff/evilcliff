@@ -36,7 +36,7 @@ import requests
 import socket
 import dns.resolver
 
-domain = "taisen.fr"
+domain = "drive.google.com"
 
 # Liste des en-têtes de sécurité à vérifier
 security_headers = [
@@ -63,16 +63,10 @@ for rdata in answers:
     print(f"Connexion: {src_ip}:{src_port} → {dest_ip}:443")
 
 # Affiche les informations sur le serveur DNS configuré
-dns_ip = dns_servers[0]
-try:
-    dns_name = socket.gethostbyaddr(dns_ip)[0]
-except:
-    dns_name = "Non résolu"
-print(f"DNS: {dns_name} ({dns_ip}){' +'+str(len(dns_servers)-1) if len(dns_servers)>1 else ''}")
+print(dns_servers)
 
 # Affichage des en-têtes de sécurité
 print("\nEn-têtes de sécurité:")
 for header in security_headers:
     print(f"{header}: {response.headers.get(header) or '❌ Non défini'}")
-
 ```
