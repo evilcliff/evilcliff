@@ -12,7 +12,7 @@ Routeurs, bornes, ordinateurs, smartphones, tablettes, IoT usant du WPA2, contr�
 Score CVSS : 6<br>
 
 ## log4shell
-CVE-2021-44228 
+CVE-2021-44228 <br>
 Vulnérabilité de type injection JNDI dans Log4j qui permet l'exécution de code à distance lorsqu'une chaîne spécialement conçue est analysée par le composant de journalisation. <br>
 Éléments d'infrastructure concernés: Serveurs d'applications Java, Applications web utilisant Log4j, Services cloud, APIs, Outils d'entreprise (comme Elasticsearch, VMware, CloudFlare), Systèmes de gestion de contenu, dispositifs IoT exécutant du code Java <br>
 Score CVSS : 10.0 (Critique)<br>
